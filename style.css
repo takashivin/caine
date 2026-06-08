@@ -13,10 +13,16 @@
     user-select: none; /* Standard */
 }
 
+/* TAMBAHKAN HTML DI SINI BIAR KUNCIAN OVERFLOW NYA MAKSIMAL */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Potong semua yang keluar layar */
+    overscroll-behavior: none; /* Matiin efek layarnya bisa ditarik/mantul di HP */
+    touch-action: none; /* Mencegah layar bisa di-scroll pakai jari */
+}
+
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
