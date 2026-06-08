@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    /* JURUS MAUT HILANGIN BIRU-BIRU DI HP */
+    -webkit-tap-highlight-color: transparent !important; 
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-touch-callout: none; /* Mencegah menu popup pas ditahan lama */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard */
 }
 
 body {
@@ -25,13 +34,8 @@ body {
     position: relative;
     width: 72px;
     height: 72px;
-    z-index: 10; 
-    cursor: pointer; 
-
-    /* TAMBAHAN BIAR GAK ADA BIRU-BIRU DI HP */
-    -webkit-tap-highlight-color: transparent; 
-    user-select: none; /* Biar elemen nggak ketidaksengaja ke-select/blok */
-    outline: none;
+    z-index: 10; /* TAMBAHAN: Biar bola selalu di depan bangun ruang */
+    cursor: pointer; /* TAMBAHAN: Biar keliatan bisa diklik */
 }
 
 .orb, .orb-dark {
